@@ -81,7 +81,7 @@ global:
 vim  .travis.yml
 
 language: node_js
-node_js
+node_js:
   - "4"  # nodejs的版本
 branches:
   only:
@@ -147,4 +147,8 @@ git  commit  -m   "modify nodejs version"   .travis.yml
 我push代码的时候发生了错误,忘记指定本地的分支了 
 
 push本地的代码至远程仓库之后，在https://travis-ci.org后台查看相关情况。
+![image](http://note.youdao.com/yws/public/resource/13bbafbfe22dbf6d1efb14e01a8de016/xmlnote/F45D3C1BB688449CB2C1DBF15290170C/13323)
+
+
+
 
