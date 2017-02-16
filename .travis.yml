@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+- "4"  # nodejs的版本
+branches:
+  only:
+  - dev  # 设置自动化部署的源码分支
+env:
+  global:
+    secure: oQSAOgn7y+FUjwpudsPYKKpxOAiIbztL4RB80vZjX05X0c52+S1nsfxtC6nkvNHfhr4WsX/qY6CE+h0rFyYvMXXjVsGgq9HH4wYgi7xPl7w+b+HQo6bc8tu3JHrx+cML9prfz2BwqjaCmKlMff7ciif+Gf75fgLi9g0o+pF8gWATwi4wfb4YB+zIRU/lisbLt+M2FZp9+rY/B0Bl1fMuBZv6+J53b3BJJ3ZvCS7ifLcnXBowKqpk+ubRJUcsYT0qRjE7/++9ipKpiQvTt1ItkDKDAqxe+ISMbBL4UwNIJD/PpqEIrxFpljEn/BRtn4XX3QI3RWnqxlDBv/ojHzvI4UTz83rR+iYgTAqaPokByV+1m+BQtTtjbTYnCGBpLtFDXec8NvAY0DD64cCXhhjouRPSinEqEMOxxcQ6f5OYhEG1zQ3l1paLyBKGpcjuydD0tlefcXUO/6Kb8zQRLFadeJ1VfWAZVfOX68I9o4SgE/d8TPZi/d8XaHc1646eWb8UVr4GUz2oj1tot8+NI+3J4IwTT5okXLAQpcWqveNin5+yegWeef6aBydoy7NtA/yZYdAgRbPJUa7Mq5fwO498Wx1vY8lJpKCsJlwFYqj1sX365PsWcHiVB9K+KMoZFhlk3BXpPPeHgpxR6vt6QyrouD23tU6ZBJXjuRDT4INSjEQ=
+    
+before_install:
+- export TZ='Asia/Shanghai'  # 设置时区
+- npm install -g hexo
+- npm install -g hexo-cli
+before_script:
+# 设置github账户信息
+- git config --global user.name "wangxujun163163" #设置github用户名
+- git config --global user.email wangxujun163163@163.com #设置github用户邮箱
+# github仓库操作
+- sed -i'' "s~git@github.com:wangxujun163163/wangxujun163163.github.io.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/wangxujun163163/wangxujun163163.github.io.git~" _config.yml
+# 安装依赖组件
+install:
+- npm install
+# 执行的命令
+script:
+- hexo clean
+- hexo generate
+# 执行的成功后执行 
+after_success:
+- hexo deploy
