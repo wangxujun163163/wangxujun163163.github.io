@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "4"  # nodejs的版本
+  - "6"  # nodejs的版本
 branches:
   only:
   - dev  # 设置自动化部署的源码分支
@@ -10,9 +10,9 @@ env:
     
 before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
-- sudo npm install -g hexo
-- sudo npm install -g hexo-cli
-- sudo npm install hexo-server
+- npm install -g hexo
+- npm install -g hexo-cli
+
 before_script:
 # 设置github账户信息
 - git config --global user.name "wangxujun163163" #设置github用户名
