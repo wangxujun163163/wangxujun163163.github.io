@@ -1,7 +1,7 @@
 ---
 title: 利用Travis CI解决家里和公司两地写博客的麻烦-填坑教程
 categories: 利用Travis
-date: 2017-02-14 14:23:02
+date: 2017-02-16 16:24:03
 tags:
  - 利用Travis
  - Hexo
