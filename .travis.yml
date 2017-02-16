@@ -10,9 +10,9 @@ env:
     
 before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
-- npm install -g hexo
-- npm install -g hexo-cli
-- npm install hexo-server
+- sudo npm install -g hexo
+- sudo npm install -g hexo-cli
+- sudo npm install hexo-server
 before_script:
 # 设置github账户信息
 - git config --global user.name "wangxujun163163" #设置github用户名
