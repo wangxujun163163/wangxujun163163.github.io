@@ -1,5 +1,5 @@
 ---
-title: 利用Travis CI解决家里和公司两地写博客的麻烦-填坑教程
+title: 手把手教你使用Travis CI自动部署你的Hexo博客到Github上
 categories: 利用Travis
 date: 2017-02-16 16:24:03
 tags:
