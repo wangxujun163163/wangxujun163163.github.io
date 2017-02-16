@@ -1,9 +1,9 @@
 ---
 title: 手把手教你使用Travis CI自动部署你的Hexo博客到Github上
-categories: 利用Travis
+categories: Travis
 date: 2017-02-16 16:24:03
 tags:
- - 利用Travis
+ - Travis
  - Hexo
  - Nodejs
 ---
