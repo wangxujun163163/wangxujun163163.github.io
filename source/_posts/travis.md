@@ -18,12 +18,11 @@ Personal Access Token  是github API访问的token ,利用这个token 可以让T
 新建Personal Access Token,点击右上角头像旁边的三角，在菜单中点击“Setting”，进入设置页面
 ![image](/uploads/setting.png)
 点击左侧栏的最下面的“Personal access tokens”，创建Personal access tokens,点击右上角的“Generate new token”，输入用户密码，进入“New personal access token”页面,
-![image](http://note.youdao.com/yws/public/resource/13bbafbfe22dbf6d1efb14e01a8de016/xmlnote/473DA3654D114E14A31526D15FB5B064/13248)
+![image](/uploads/new_token.png)
 设置Token description（其实就是名称），选择相应的权限，如下图所示,
-![image](http://note.youdao.com/yws/public/resource/13bbafbfe22dbf6d1efb14e01a8de016/xmlnote/74248C75B748423EAEAA368A902D331F/13251)
+![image](/uploads/scopes.png)
 
 点击“Generate token”按钮，生成Personal access tokens。如下图中红线标注的部分。注意：这行token只会在刚刚创建完成后显示一次，以后不再显示。因此，复制并保存到本地。 
-
 
 
 # 配置Travis CI
