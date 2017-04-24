@@ -28,7 +28,7 @@ Personal Access Token  是github API访问的token ,利用这个token 可以让T
 # 配置Travis CI
 
 登录并配置Travis CI(https://travis-ci.org/)将鼠标放在用户名上，在弹出的菜单中点击“Accounts”，将会显示你在GitHub上的仓库。 找到自己的博客项目，点击X号，将其变成√号。再点击右侧的齿轮，进入该仓库的配置页面。 在项目的设置中开启Build only if .travis.yml is present这一项,
-![image](uploads/account.png)
+![image](/uploads/account.png)
 
 
 # 本地安装Travis
