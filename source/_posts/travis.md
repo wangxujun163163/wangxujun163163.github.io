@@ -28,7 +28,7 @@ Personal Access Token  是github API访问的token ,利用这个token 可以让T
 # 配置Travis CI
 
 登录并配置Travis CI(https://travis-ci.org/)将鼠标放在用户名上，在弹出的菜单中点击“Accounts”，将会显示你在GitHub上的仓库。 找到自己的博客项目，点击X号，将其变成√号。再点击右侧的齿轮，进入该仓库的配置页面。 在项目的设置中开启Build only if .travis.yml is present这一项,
-![image](http://note.youdao.com/yws/public/resource/13bbafbfe22dbf6d1efb14e01a8de016/xmlnote/FB9DFB1B5CC0498F81DBC148E8435ABF/13254)
+![image](uploads/account.png)
 
 
 # 本地安装Travis
@@ -147,7 +147,7 @@ git  commit  -m   "modify nodejs version"   .travis.yml
 我push代码的时候发生了错误,忘记指定本地的分支了 
 
 push本地的代码至远程仓库之后，在https://travis-ci.org后台查看相关情况。
-![image](http://note.youdao.com/yws/public/resource/13bbafbfe22dbf6d1efb14e01a8de016/xmlnote/F45D3C1BB688449CB2C1DBF15290170C/13323)
+![image](/uploads/push_travis.png)
 
 
 
