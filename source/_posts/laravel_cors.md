@@ -1,7 +1,7 @@
 ---
 title: Laravel/Lumen中使用跨域功能cors
 categories: Laravel
-date: 2017-02-16 16:24:03
+date: 2017-04-25 13:24:03
 tags:
  - Laravel
  - cors
